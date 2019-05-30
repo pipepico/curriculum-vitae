@@ -1,0 +1,17 @@
+git clone "repository"
+npm init -y
+mkdir src public
+touch index.js
+touch public/index.html
+npm i react react-dom
+npm i @babel/core babel-loader @babel/preset-env @babel/preset-react
+touch .babelrc
+npm i babel-plugin-transform-class-properties  
+--Configuracion .babelrc con los presets y plugin
+npm i webpack webpack-cli html-webpack-plugin html-loader
+touch webpack.config.js
+--Configuracion webpack.config.js con los presets y plugin
+npm i webpack-dev-server 
+-- Add in package.json to scripts:
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open --mode development",                         ✔  1157  01:27:30
